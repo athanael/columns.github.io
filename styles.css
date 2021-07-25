@@ -1,0 +1,116 @@
+/* font-family: 'Lexend Deca', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.svg,
+.title {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+}
+
+.card {
+  padding: 40px;
+  padding-right: 33px;
+  min-width: 250px;
+  height: fit-content;
+  max-height: 410px;
+}
+
+.card:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+.card:nth-child(3) {
+  border-radius: 0 10px 10px 0;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 60px;
+  line-height: 20px;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.blue {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.green {
+  background-color: hsl(179, 100%, 13%);
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid white;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+}
+
+.b-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.b-blue {
+  color: hsl(184, 100%, 22%);
+}
+
+.b-green {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+  .attribution {
+    width: 80%;
+  }
+}
